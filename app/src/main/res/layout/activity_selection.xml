@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundeeee" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90FADA5E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Welcome!"
+            android:layout_marginTop="50dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+            android:textColor="#945F36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hope you enjoy to stay"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#945F36" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_xlarge" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#945F36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SELECTION AS VENDOR AND USER"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#945F36"
+            android:textStyle="bold" />
+
+
+
+
+        <Button
+            android:id="@+id/btn_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:background="@drawable/shape2"
+            android:stateListAnimator="@drawable/animator"
+            android:onClick="sign_in"
+            android:text="Login As Vendor"
+            android:textColor="#945F36" />
+
+
+
+        <Button
+            android:id="@+id/btn_user"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="2pt"
+            android:layout_marginLeft="2pt"
+            android:background="@drawable/shape2"
+            android:stateListAnimator="@drawable/animator"
+            android:onClick="sign_in"
+            android:text="Login As User"
+            android:textColor="#945F36" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_medium" />
+
+    </LinearLayout>
+
+</RelativeLayout>

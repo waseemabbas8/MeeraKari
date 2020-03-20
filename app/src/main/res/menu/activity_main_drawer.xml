@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_recomm"
+            android:icon="@mipmap/ic_recomm"
+            android:title="Recommendation" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@mipmap/ic_aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_editprofile"
+            android:icon="@mipmap/ic_editprofile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_updatepass"
+            android:icon="@mipmap/ic_passchange"
+            android:title="Update Password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/ic_logout"
+            android:title="Log Out"/>
+
+    </group>
+
+    <item android:title="View As">
+        <menu>
+            <item
+                android:id="@+id/vendor"
+                android:icon="@mipmap/ic_vendor"
+                android:title="Want To Work As Vendor?" />
+
+        </menu>
+    </item>
+
+</menu>

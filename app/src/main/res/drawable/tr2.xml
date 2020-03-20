@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <gradient
+        android:centerX=".6"
+        android:centerY=".40"
+        android:endColor="@android:color/transparent"
+        android:gradientRadius="20"
+        android:startColor="@android:color/transparent"
+        android:type="radial" />
+
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+
+    <size
+        android:height="100dp"
+        android:width="100dp" />
+
+</shape>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">-->
+<!--    <solid android:color="#00ffffff" />-->
+<!--    <padding android:left="60pt"-->
+<!--        android:top="60pt"-->
+<!--        android:right="60pt"-->
+<!--        android:bottom="60pt" />-->
+<!--    <corners android:radius="6dp" />-->
+<!--    <stroke android:width="6dp" android:color="#000" />-->
+<!--</shape>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:innerRadius="1dp"-->
+<!--android:shape="ring"-->
+<!--android:thicknessRatio="2"-->
+<!--android:useLevel="false" >-->
+<!--<solid android:color="@android:color/transparent" />-->
+
+<!--<stroke-->
+<!--    android:width="3pt"-->
+<!--    android:color="#000" />-->
+<!--</shape>-->

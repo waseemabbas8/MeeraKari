@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21108880635",
+    "firebase_url": "https://tahreemfyp.firebaseio.com",
+    "project_id": "tahreemfyp",
+    "storage_bucket": "tahreemfyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21108880635:android:ab034f8c264f7108b5ec5e",
+        "android_client_info": {
+          "package_name": "com.example.tahreem_fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21108880635-19fpfd83ghj9f6c3s0hmrvqc7ilvkfc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tahreem_fyp",
+            "certificate_hash": "4fdbdfd0dd95c2d006e2e555b04b900fb37bfebb"
+          }
+        },
+        {
+          "client_id": "21108880635-la8hbfoo5ji8k7lm28o7fbid5d64e7tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhxpeBldxRT-dLkIWQXIMzs1uPVb6ucjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21108880635-la8hbfoo5ji8k7lm28o7fbid5d64e7tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

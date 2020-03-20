@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:actionBarSize"
+        android:alpha="0.5"
+
+        android:background="@drawable/w" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:actionBarSize"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/stockactivityopening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4pt"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="STOCK"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5pt"
+
+                    android:layout_marginLeft="2pt"
+                    android:layout_marginRight="2pt"
+                    android:clickable="true"
+                    android:elevation="5pt"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#FFB500"
+                    app:cardCornerRadius="4pt"
+                    app:cardElevation="5pt"
+                    app:cardMaxElevation="5pt">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4pt"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/viewRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_stock_viewall"
+                    android:layout_width="45pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginBottom="5pt"
+                    android:background="@drawable/shape3"
+                    android:padding="4pt"
+
+                    android:stateListAnimator="@drawable/animator"
+                    android:text="VIEW ALL"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/matchingactivityopening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4pt"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="MATCHING"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="2pt"
+                    android:layout_marginRight="2pt"
+                    android:clickable="true"
+                    android:elevation="5pt"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#FFB500"
+                    app:cardCornerRadius="4pt"
+                    app:cardElevation="5pt"
+                    app:cardMaxElevation="5pt">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4pt"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/Recyclermatching"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/viewallmatching"
+                    android:layout_width="45pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginBottom="5pt"
+                    android:background="@drawable/shape3"
+                    android:padding="4pt"
+                    android:stateListAnimator="@drawable/animator"
+                    android:text="VIEW ALL"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/customactivityopen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4pt"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="CUSTOM"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5pt"
+
+                    android:layout_marginLeft="2pt"
+                    android:layout_marginRight="2pt"
+                    android:clickable="true"
+                    android:elevation="5pt"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#FFB500"
+                    app:cardCornerRadius="4pt"
+                    app:cardElevation="5pt"
+                    app:cardMaxElevation="5pt">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4pt"
+                        android:orientation="vertical">
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclercustom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/viewallcustom"
+                    android:layout_width="45pt"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginBottom="70dp"
+                    android:background="@drawable/shape3"
+                    android:padding="4pt"
+                    android:stateListAnimator="@drawable/animator"
+                    android:text="VIEW ALL"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
